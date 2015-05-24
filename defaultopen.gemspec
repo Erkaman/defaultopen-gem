@@ -6,8 +6,9 @@ Gem::Specification.new do |s|
   s.summary     = "Cross-platform file opener"
   s.description = "Provides a cross-platform way of opening a file in its default application"
   s.authors     = ["Eric Arnebäck"]
-  s.email       = 'erkastina@hotmail.com'
+  s.email       = 'arnebackeric@gmail.com'
   s.files       = ["lib/defaultopen.rb"]
-#  s.homepage    = 'http://rubygems.org/gems/hola'
+  s.homepage    = 'http://rubygems.org/gems/defaultopen'
   s.license       = 'MIT'
+
 end
