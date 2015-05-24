@@ -7,19 +7,19 @@ module DefaultOpen
       cmd = ""
     elsif (/darwin/ =~ RUBY_PLATFORM) != nil
       return system "open #{filename}"
-      # OS X
+    # OS X
     else
       # else, we assume Linux/Unix.
 
-      if system "xdg-open #{filename}" != nil then
+      if system("xdg-open #{filename}") != nil then
         return true
       end
 
-      if system "gnome-open #{filename}" != nil then
+      if system("gnome-open #{filename}") != nil then
         return true
       end
 
-      if system "kfmclient exec #{filename}" != nil then
+      if system("kfmclient exec #{filename}") != nil then
         return true
       end
 
