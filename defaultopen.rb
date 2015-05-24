@@ -4,7 +4,7 @@ module DefaultOpen
 
     if  (/cygwin|mswin|mingw|bccwin|wince|emx/ =~ RUBY_PLATFORM) != nil then
       # windows
-      cmd = ""
+      return system "start #{filename}"
     elsif (/darwin/ =~ RUBY_PLATFORM) != nil
       # OS X
       return system "open #{filename}"
