@@ -6,8 +6,8 @@ module DefaultOpen
       # windows
       cmd = ""
     elsif (/darwin/ =~ RUBY_PLATFORM) != nil
+      # OS X
       return system "open #{filename}"
-    # OS X
     else
       # else, we assume Linux/Unix.
 
